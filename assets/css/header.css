@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family: "Verdana-Bold";
+    src: url("assets/fonts/Verdana Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Verdana-Regular";
+    src: url("assets/fonts/Verdana Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    font-family: 'Verdana-Regular',
+    sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+     color:#000 !important;
+     text-decoration: none !important;
+}
+
+.navbar-brand img{
+    max-width:207px;
+    width: 100%;
+}
+
+.navbar-nav .nav-item{
+    font-size:13px;
+    font-weight: bold;
+}
+.btn_tel{
+    border:none;
+    outline: none;
+    background-color:#29ABE2;
+    border-radius: 37px;
+    color:#fff;
+     font-family: 'Verdana-Bold',
+     sans-serif;
+    padding: 0.7em 2em;
+    font-size:1rem;
+    font-weight: 700;
+}
