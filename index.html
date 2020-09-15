@@ -60,7 +60,7 @@
         <section class="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6 col-12">
                         <div class="logo-brand my-5">
                             <img src="assets/img/logo.svg">
                         </div>
@@ -85,9 +85,9 @@
                             <button class="btn_tel btn-feedback">Оставить заявку</button>
                         </div>
                     </div>
-                    <div class="col-6" style="overflow:hidden">
-                     <!--    <div class="about-bk"></div> -->
-                        <img src="assets/img/ok-cleaning.svg">
+                    <div class="col-6 d-md-flex d-none">
+                   
+                        <img class="about-bk" src="assets/img/ok-cleaning.svg">
                     </div>
                 </div>
             </div>
@@ -95,9 +95,9 @@
         <section class="accident py-5">
             <div class="container">
                 <div class="d-flex justify-content-between">
-                    <img src="assets/img/water.png">
-                    <img src="assets/img/warning.png">
-                    <img src="assets/img/fire.png">
+                   <a href="#"><img src="assets/img/water.png"></a> 
+                    <a href="#"><img src="assets/img/warning.png"></a> 
+                    <a href="#"><img src="assets/img/fire.png"></a> 
                 </div>
             </div>
            
@@ -107,8 +107,8 @@
                 <div class="title-block my-5">
                     <h2>Почему нам доверяют</h2>
                 </div>
-                <div class="trust-blocks row justify-content-center">
-                    <div class="one d-flex justify-content-between">
+                <div class="trust-blocks">
+                 
                         <div class="trust-block ">
                             <img src="assets/img/broom.svg">
                             <p>Первая причина</p>
@@ -117,21 +117,21 @@
                             <img src="assets/img/broom.svg">
                             <p>Первая причина</p>
                         </div>
+                        <div class="trust-block" >
+                            <img src="assets/img/broom.svg">
+                            <p>Первая причина</p>
+                        </div>
+                  
+                  
                         <div class="trust-block">
                             <img src="assets/img/broom.svg">
                             <p>Первая причина</p>
                         </div>
-                    </div>
-                   <div class="two d-flex justify-content-between">
-                        <div class="trust-block">
+                        <div class="trust-block" >
                             <img src="assets/img/broom.svg">
                             <p>Первая причина</p>
                         </div>
-                        <div class="trust-block">
-                            <img src="assets/img/broom.svg">
-                            <p>Первая причина</p>
-                        </div>
-                   </div>
+                   
                    
                 </div>
             </div>
@@ -142,7 +142,7 @@
                     <h2>Оставьте заявку <br> и мы свяжемся с Вами!</h2>
                 </div>
                 <div class="applications-block d-flex justify-content-between">
-                    <img src="assets/img/floor-cleaning-computer-icons-cleaner-housekeeping-others-thumbnail.svg" alt="">
+                    <img  class="d-md-flex d-none" src="assets/img/floor-cleaning-computer-icons-cleaner-housekeeping-others-thumbnail.svg" alt="">
                    <div class="form-block d-flex flex-column">
                         <form action="#" class="form mt-5 d-flex flex-column">
                             <input type="text" placeholder="Имя..." name="name" class="input" required="">
@@ -150,7 +150,7 @@
                         </form>
                         <button type="submit" class="btn_tel btn-form my-5">Отправить</button>
                    </div>
-                    <img src="assets/img/housekeeper-male.svg" alt="">
+                    <img src="assets/img/housekeeper-male.svg" alt="" class="d-md-flex d-none">
                     </div>
                 </div>
             </div>
@@ -188,22 +188,15 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/swiper-main.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

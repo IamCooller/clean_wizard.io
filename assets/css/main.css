@@ -32,11 +32,14 @@
     z-index: 1;
 }
 
-.about {}
+.about {
+    overflow: hidden;
+}
 
 .about .logo-brand {
     max-width: 500px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .about .logo-brand img {
@@ -48,6 +51,7 @@
     border-radius: 20px;
     padding: 15px;
     max-width: 509px;
+     margin: 0 auto;
 }
 
 .about .about-title p {
@@ -61,14 +65,12 @@
     color: #000000;
     font-family: 'Verdana-Bold', sans-serif;
     font-size: 19px;
+     margin: 0 auto;
 }
 
-/* .about-bk{
-    background: url(../img/ok-cleaning.svg) no-repeat center;
-    background-size: cover;
-    width: 100%;
+.about-bk{
     height: 100%;
-} */
+}
 
 .accident {
     background: #51B5FF;
@@ -82,6 +84,18 @@
 .title-block {
     max-width: fit-content;
     margin: 0 auto;
+}
+
+.trust-blocks {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.trust-block{
+     flex: 0 0 33.3%;
+     margin-top: 25px;
+     text-align: center;
 }
 
 .title-block h2 {
