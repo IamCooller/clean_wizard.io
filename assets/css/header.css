@@ -26,6 +26,10 @@ a{
      text-decoration: none !important;
 }
 
+button{
+    outline: none !important;
+}
+
 .navbar-brand img{
     max-width:207px;
     width: 100%;
@@ -45,5 +49,13 @@ a{
      sans-serif;
     padding: 0.7em 2em;
     font-size:1rem;
+    max-height: 44px;
     font-weight: 700;
+}
+
+@media(max-width:990px){
+    .navbar-toggler{
+        padding: 12px;
+        border-radius: 8px;
+    }
 }

@@ -15,12 +15,17 @@
 .main-block-title h1 {
     color: #FFFFFF;
     font-size: 15px;
-    max-width: 550px;
+    max-width: 352px;
     opacity: 1;
     position: relative;
     z-index: 5;
     margin: auto;
     padding: 20px;
+}
+
+.main-block-title h1 span{
+    font-weight: 900;
+    font-size: 24px;
 }
 
 .main-bg-dark {
@@ -66,6 +71,13 @@
     font-family: 'Verdana-Bold', sans-serif;
     font-size: 19px;
      margin: 0 auto;
+       padding: 8px 20px;
+     outline: none;
+}
+
+.btn-feedback:hover{
+    background: #51B5FF;
+    color: #FFFFFF;
 }
 
 .about-bk{
@@ -79,6 +91,49 @@
 .accident img {
     max-width: 250px;
     width: 100%;
+}
+
+.accident-block{
+    position: relative;
+}
+
+.accident-block h2{
+    color:#FFFFFF; 
+    font-family:'Verdana-Bold',sans-serif;
+    font-size:20px;
+     position: absolute;
+     z-index: 3;
+     max-width: 100px;
+     top: 100px;
+     left: 94px;
+   text-align: center;
+ opacity: 0;
+  visibility: hidden;
+  transition: .55s opacity, .55s visibility;
+}
+
+.accident-block-bg{
+    position: relative;
+    z-index: 1;
+}
+
+.accident-block-fg{
+    position: absolute;
+    z-index: 3;
+    max-width: 101px !important;
+    left: 77px;
+    max-height: 115px !important;
+    top: 66px;
+    height: 100%;
+}
+
+.accident-block:hover.accident-block h2{
+    opacity: 1;
+    visibility: visible;
+}
+
+.accident-block:hover .accident-block-fg{
+    opacity: 0;
 }
 
 .title-block {
@@ -96,6 +151,10 @@
      flex: 0 0 33.3%;
      margin-top: 25px;
      text-align: center;
+     font-weight: 900;
+     font-size: 1.1rem;
+      font-family: 'Verdana-Bold',
+      sans-serif;
 }
 
 .title-block h2 {
@@ -154,4 +213,49 @@ input::placeholder{
       max-width: 200px;
 }
 
+.share-block-title{
+    color:#FFFFFF; 
+    font-size:19px;
+    max-width: 161px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 
+.share-block-title img{
+    max-width: 30px;
+    max-height: 36px;
+    width: 100%;
+}
+
+.share-block-icons img{
+    max-width: 52px;
+    max-height: 51px;
+    width: 100%;
+}
+
+.share-block-icons{
+      justify-content: space-between;
+      display: flex;
+      max-width: 200px;
+      margin: 0 auto;
+}
+
+
+@media (max-width:990px){
+    .accident-block{
+        margin:  0 auto;
+    }
+    .main-block-title h1{
+        font-size: x-large;
+    }
+    .main-block-title h1 span{
+        font-size: xx-large;
+    }
+}
+
+@media(max-width:340px){
+    .navbar {
+        display: table-header-group;
+    }
+}
