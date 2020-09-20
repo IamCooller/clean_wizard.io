@@ -88,7 +88,8 @@
 }
 
 .mobile-call img{
-      width: 20vh;
+      width: 100%;
+  max-width: 57px;
 }
 
 .about-bk{
