@@ -38,6 +38,11 @@
                             <a class="nav-link" href="#">Блог<span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
+
+                    <div class="mobile-menu-additional">
+                        <p>Украина г. Киев</p>
+                        <span>Телефон: +380985923249</span>
+                    </div>
                 </div>
                 <div class="navbar-tel d-lg-flex d-none">
                     <button class="btn_tel"><img src="assets/img/tel.svg" class="pr-2">Контакты</button>
@@ -227,6 +232,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+        <script>
+            $('.navbar-toggler').on('click', function () {
+                $('.navbar').toggleClass('positionFixed');
+            });
+        </script>
+
 </body>
 
 </html>
