@@ -294,11 +294,7 @@ input::placeholder{
     }
 }
 
-@media(max-width:340px){
-    .navbar {
-        display: table-header-group;
-    }
-}
+
 
 
 
