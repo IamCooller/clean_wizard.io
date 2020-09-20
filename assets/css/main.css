@@ -111,13 +111,19 @@
      position: absolute;
      z-index: 3;
      max-width: 100px;
-     top: 100px;
-     left: 94px;
+    top: 40%;
+    left: 30%;
    text-align: center;
  opacity: 0;
   visibility: hidden;
   transition: .55s opacity, .55s visibility;
 }
+
+.accident-block-img-fixed h2{
+top: 45%;
+left: 35%;
+}
+
 
 .accident-block-bg{
     position: relative;
@@ -167,7 +173,6 @@
 .title-block h2 {
     color: #4FB4FE;
     font-family: 'Verdana-Bold', sans-serif;
-    border-bottom: 1px solid #4FB4FE;
 }
 
 .applications {
@@ -259,6 +264,34 @@ input::placeholder{
     .main-block-title h1 span{
         font-size: xx-large;
     }
+
+    #my-nav {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+       
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        background: #AAEDEA;
+        position: fixed;
+       
+        z-index: 100;
+       
+        text-align: center;
+        overflow: auto;
+
+        
+    }
+}
+
+@media (max-width:400px){
+    .trust-blocks{
+        flex-direction: column;
+    }
 }
 
 @media(max-width:340px){
@@ -290,7 +323,6 @@ input::placeholder{
 }
 
 .aftermath-title img {
-    max-width: 130px;
     width: 100%;
 }
 
@@ -340,7 +372,7 @@ input::placeholder{
      white-space: nowrap;
     font-size: 1.5rem;
     position: relative;
-    top: 97px;
+    top: 90px;
     letter-spacing: 2.4px;
      right: 10vw;
 }
@@ -405,7 +437,7 @@ input::placeholder{
     font-family: 'Verdana-Bold',
         sans-serif;
     margin: 0;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
 }
 
 .table-row img {
@@ -499,7 +531,10 @@ input::placeholder {
 
 @media (max-width:990px) {
    
-  
+    .aftermath-title img {
+        max-width: 130px;
+    }
+
     .aftermath-info-title p {
         padding-bottom: 85px;
     }
@@ -537,7 +572,7 @@ input::placeholder {
     .aftermath-title-right{
         overflow: inherit;
     }
-    
+
     .aftermath-title p::after,
     .aftermath-title span::after{
         width: 100%;

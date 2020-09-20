@@ -39,6 +39,10 @@ button{
     font-size:13px;
     font-weight: bold;
 }
+
+.navbar-nav .nav-item:hover{
+    text-decoration: underline !important;
+}
 .btn_tel{
     border:none;
     outline: none;
@@ -51,6 +55,11 @@ button{
     font-size:1rem;
     max-height: 44px;
     font-weight: 700;
+}
+
+.btn_tel img{
+    max-width:30px;
+    width:100%;
 }
 
 @media(max-width:990px){
