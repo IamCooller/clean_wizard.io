@@ -1015,3 +1015,23 @@ font-size:16px;
             top: 6%;
         }
     }
+
+
+    .navbar-tel-open-btn{
+        text-align: center;
+    }
+
+
+    /* HARD */
+    .aftermath-title-left-hard{
+       
+    }
+
+    @media (max-width: 770px){
+        .aftermath-title-left-hard img{
+            max-width: 86px;
+}
+.aftermath-title-left-hard h1{
+    font-size:  16px;
+}
+}

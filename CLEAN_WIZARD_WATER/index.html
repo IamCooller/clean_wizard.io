@@ -19,7 +19,8 @@
                 <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.svg" alt="logo"></a>
                 <button class="navbar-toggler" @click="menuNone = !menuNone" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
                     aria-expanded="false" aria-label="Toggle navigation">
-                   <img src="../assets/img/menu.png">
+                    <img src="../assets/img/menu.png" v-show="!menuNone">
+                    <img src="../assets/img/закрыть.png" v-show="menuNone">
                 </button>
                 <div id="my-nav" class="collapse navbar-collapse" v-show="menuNone">
                     <ul class="navbar-nav text-center mx-auto">
@@ -59,27 +60,26 @@
                     </div>
                     <div class="navbar-tel-open-social">
                        <a href="#"><img src="../assets/img/whatsapp-viber-telegram-instant-messaging-mobile-app-whatsapp@1X.png"></a> 
-        
                     </div>
                 </div>
             </nav>
         </div>
     </header>
     <main>
-        
-        <section class="main-fire">
-            <a class="mobile-call" @click="showMobileMenu=!showMobileMenu" v-show="!showMobileMenu"><img src="../assets/img/mobil.png"></a>
-            <div class="navbar-tel-open navbar-tel-open-mobile" @click="showMobileMenu=!showMobileMenu" v-show="showMobileMenu">
-                <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты</div>  
-                   <div class="navbar-tel-open-ter">
-                       +38 (098) 596 32 49
-                   </div>
-                   <div class="navbar-tel-open-social">
-                      <a href="#"><img src="../assets/img/whatsapp-viber-telegram-instant-messaging-mobile-app-whatsapp@1X.png"></a> 
-                   </div>
+        <a class="mobile-call" @click="showMobileMenu=!showMobileMenu" v-show="!showMobileMenu"><img src="../assets/img/mobil.png"></a>
+        <div class="navbar-tel-open navbar-tel-open-mobile" @click="showMobileMenu=!showMobileMenu" v-show="showMobileMenu">
+            <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты</div>  
+               <div class="navbar-tel-open-ter">
+                   +38 (098) 596 32 49
                </div>
+               <div class="navbar-tel-open-social">
+                  <a href="#"><img src="../assets/img/whatsapp-viber-telegram-instant-messaging-mobile-app-whatsapp@1X.png"></a> 
+               </div>
+           </div>
+        <section class="main-fire">
+          
             <img src="../assets/img/main_water_bg.png">
-             <a href="#" class="d-lg-none d-flex mobile-call"><img src="../assets/img/mobil.png"></a>
+            
         </section>
         <section class="aftermath">    
                 <div class="aftermath-title d-flex justify-content-between">

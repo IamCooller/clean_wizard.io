@@ -19,7 +19,8 @@
                 <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/logo.svg" alt="logo"></a>
                 <button class="navbar-toggler" @click="menuNone = !menuNone" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
                     aria-expanded="false" aria-label="Toggle navigation">
-                   <img src="../../assets/img/menu.png">
+                    <img src="../../assets/img/menu.png" v-show="!menuNone">
+                    <img src="../../assets/img/закрыть.png" v-show="menuNone">
                 </button>
                 <div id="my-nav" class="collapse navbar-collapse" v-show="menuNone">
                     <ul class="navbar-nav text-center mx-auto">
