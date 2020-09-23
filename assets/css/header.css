@@ -62,9 +62,73 @@ button{
     width:100%;
 }
 
+
+.navbar-tel-open {
+    display: flex;
+    flex-direction: column;
+    border:none;
+    outline: none;
+    background-color:#29ABE2;
+    border-radius: 22px;
+    color:#fff;
+     font-family: 'Verdana-Bold',
+     sans-serif;
+    padding: 0.7em 2em;
+    font-size:1rem;
+    font-weight: 700;
+    -webkit-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+}
+
+.navbar-tel-open-ter{
+    font-size: 0.7rem;
+    padding-top: 1.2rem;
+    margin: 0 auto;
+}
+
+.navbar-tel-open-social{
+    margin: 0 auto;
+    padding-top: 0.4rem;
+}
+
+.mobile-menu-additional{
+    display: none;
+}
+
+
+.navbar-tel-open-mobile{
+    position: fixed;
+    right: 1vw;
+    bottom: 0vh;
+    z-index: 10;
+    width: 100%;
+}
+
+.mobile-call{
+    position: fixed;
+    right: 1vw;
+    bottom: 0vh;
+    z-index: 10;
+    display: none;
+}
+
+.mobile-call img{
+   width: 100%;
+   max-width: 57px;
+}
+
 @media(max-width:990px){
     .navbar-toggler{
         padding: 12px;
         border-radius: 8px;
     }
+    .mobile-menu-additional,
+    .mobile-call{
+        display: flex;
+    }
+    .navbar-tel{
+        display: none;
+    }
+
 }

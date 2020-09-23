@@ -12,41 +12,70 @@
 </head>
 
 <body>
+    <div id="app">
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.svg" alt="logo"></a>
-                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
-                    aria-expanded="false" aria-label="Toggle navigation ">
+                <button class="navbar-toggler" @click="menuNone = !menuNone" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
                    <img src="../assets/img/menu.png">
                 </button>
-                <div id="my-nav" class="collapse navbar-collapse">
+                <div id="my-nav" class="collapse navbar-collapse" v-show="menuNone">
                     <ul class="navbar-nav text-center mx-auto">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">О компании<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../CLEAN_WIZARD_ABOUT/index.html">О компании<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="#">Услуги<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Портфолио<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Портфолио<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Сотрудничество<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../CLEAN_WIZARD_PARTNERSHIP/index.html">Сотрудничество<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Блог<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Блог<span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
+
+                    <div class="mobile-menu-additional">
+                        <div class="mobile-menu-additional-block pt-4">
+                               <p>Украина г. Киев</p>
+                               <span>Телефон: +380985923249</span>
+                        </div>
+                         <a href="#" class=""><img src="assets/img/mobil.png"></a>
+                
+                    </div>
                 </div>
-                <div class="navbar-tel d-lg-flex d-none">
-                    <button class="btn_tel"><img src="../assets/img/tel.svg" class="pr-2">Контакты</button>
+                <div class="navbar-tel" @click="showMenu=!showMenu" v-show="!showMenu">
+                    <button class="btn_tel"><img src="assets/img/tel.svg" class="pr-2">Контакты</button>
+                </div>
+                <div class="navbar-tel-open" @click="showMenu=!showMenu" v-show="showMenu">
+                 <div class="navbar-tel-open-btn"> <img src="assets/img/tel.svg" class="pr-2">Контакты</div>  
+                    <div class="navbar-tel-open-ter">
+                        +38 (098) 596 32 49
+                    </div>
+                    <div class="navbar-tel-open-social">
+                       <a href="#"><img src="assets/img/whatsapp-viber-telegram-instant-messaging-mobile-app-whatsapp@1X.png"></a> 
+        
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
     <main>
-        
+        <a class="mobile-call" @click="showMobileMenu=!showMobileMenu" v-show="!showMobileMenu"><img src="../assets/img/mobil.png"></a>
+        <div class="navbar-tel-open navbar-tel-open-mobile" @click="showMobileMenu=!showMobileMenu" v-show="showMobileMenu">
+            <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты</div>  
+               <div class="navbar-tel-open-ter">
+                   +38 (098) 596 32 49
+               </div>
+               <div class="navbar-tel-open-social">
+                  <a href="#"><img src="../assets/img/whatsapp-viber-telegram-instant-messaging-mobile-app-whatsapp@1X.png"></a> 
+               </div>
+           </div>
         <section class="main-fire">
             <img src="../assets/img/min_fire_bg.png">
              <a href="#" class="d-lg-none d-flex mobile-call"><img src="../assets/img/mobil.png"></a>
@@ -204,6 +233,7 @@
             </div>
         </div>
     </footer>
+</div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -213,7 +243,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      
+        <script>
+               var app = new Vue({
+                    el: "#app",
+                    data:{
+                        showMenu:false,
+                        showMobileMenu:false,
+                        menuNone:false
+                    }
+                });
+                $('.navbar-toggler').on('click', function () {
+                    $('.navbar').toggleClass('positionFixed');    
+                });
+        </script>
 </body>
 
 </html>
