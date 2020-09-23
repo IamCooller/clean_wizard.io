@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Clean Wizard</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.svg" alt="logo"></a>
+                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                   <img src="../assets/img/menu.png">
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav text-center mx-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">О компании<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Услуги<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Портфолио<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Сотрудничество<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Блог<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-tel d-lg-flex d-none">
+                    <button class="btn_tel"><img src="../assets/img/tel.svg" class="pr-2">Контакты</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+     <section class="portfolio" id="app">
+         <div class="container">
+             <div class="portfolio-blocks d-flex flex-column">
+                 <div class="portfolio-block d-flex mt-5">
+                    <div class="portfolio-block-img col-12 col-lg-7 p-0">
+                        <img src="../assets/img/posle-pozhara copy 3@1X.png">
+                    </div>
+                    <div class="portfolio-block-title col-12 col-lg-5">
+                        <h2 class="title-block my-4">ПОСЛЕДСТВИЯ ПОЖАРА</h2>
+                        <p>Далеко-далеко за словесными горами в 
+                            стране гласных и согласных живут рыбные 
+                            тексты. Вдали от всех живут они в буквенных 
+                            домах на берегу Семантика большого 
+                            языкового океана. Маленький ручеек Даль 
+                            журчит по всей стране и обеспечивает ее 
+                            всеми необходимыми правилами. Эта 
+                            парадигматическая страна, в которой 
+                            жаренные члены предложения залетают 
+                            прямо в рот..</p>
+                            <a href="CLEAN_WIZARD_PORTFOLIO_INFO/index.html" class="btn-portfolio">Подробнее</a>
+                    </div>
+                 </div>
+                 <div class="portfolio-block d-flex mt-5">
+                    <div class="portfolio-block-img col-12 col-lg-7 p-0">
+                        <img src="../assets/img/posle-pozhara copy 3@1X.png">
+                    </div>
+                    <div class="portfolio-block-title col-12 col-lg-5">
+                        <h2 class="title-block my-4">ПОСЛЕДСТВИЯ ПОЖАРА</h2>
+                        <p>Далеко-далеко за словесными горами в 
+                            стране гласных и согласных живут рыбные 
+                            тексты. Вдали от всех живут они в буквенных 
+                            домах на берегу Семантика большого 
+                            языкового океана. Маленький ручеек Даль 
+                            журчит по всей стране и обеспечивает ее 
+                            всеми необходимыми правилами. Эта 
+                            парадигматическая страна, в которой 
+                            жаренные члены предложения залетают 
+                            прямо в рот..</p>
+                            <a href="CLEAN_WIZARD_PORTFOLIO_INFO/index.html" class="btn-portfolio">Подробнее</a>
+                    </div>
+                 </div>
+                 <div class="btn-load-portfolio text-center my-5" @click='loadOn=!loadOn' v-show="!loadOn">
+                   <img src="../assets/img/btn-load-portfolio.png">
+                 </div>
+                 <div class="portfolio-load" v-show="loadOn">
+                    <div class="portfolio-block d-flex mt-5">
+                        <div class="portfolio-block-img col-12 col-lg-7 p-0">
+                            <img src="../assets/img/posle-pozhara copy 3@1X.png">
+                        </div>
+                        <div class="portfolio-block-title col-12 col-lg-5">
+                            <h2 class="title-block my-4">ПОСЛЕДСТВИЯ ПОЖАРА</h2>
+                            <p>Далеко-далеко за словесными горами в 
+                                стране гласных и согласных живут рыбные 
+                                тексты. Вдали от всех живут они в буквенных 
+                                домах на берегу Семантика большого 
+                                языкового океана. Маленький ручеек Даль 
+                                журчит по всей стране и обеспечивает ее 
+                                всеми необходимыми правилами. Эта 
+                                парадигматическая страна, в которой 
+                                жаренные члены предложения залетают 
+                                прямо в рот..</p>
+                                <a href="CLEAN_WIZARD_PORTFOLIO_INFO/index.html" class="btn-portfolio">Подробнее</a>
+                        </div>
+                     </div>
+                     <div class="portfolio-block d-flex mt-5">
+                        <div class="portfolio-block-img col-12 col-lg-7 p-0">
+                            <img src="../assets/img/posle-pozhara copy 3@1X.png">
+                        </div>
+                        <div class="portfolio-block-title col-12 col-lg-5">
+                            <h2 class="title-block my-4">ПОСЛЕДСТВИЯ ПОЖАРА</h2>
+                            <p>Далеко-далеко за словесными горами в 
+                                стране гласных и согласных живут рыбные 
+                                тексты. Вдали от всех живут они в буквенных 
+                                домах на берегу Семантика большого 
+                                языкового океана. Маленький ручеек Даль 
+                                журчит по всей стране и обеспечивает ее 
+                                всеми необходимыми правилами. Эта 
+                                парадигматическая страна, в которой 
+                                жаренные члены предложения залетают 
+                                прямо в рот..</p>
+                                <a href="CLEAN_WIZARD_PORTFOLIO_INFO/index.html" class="btn-portfolio">Подробнее</a>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+    </main>
+    <footer>
+        <div class="container d-flex justify-content-center flex-column pb-5">
+            <a href="#" class="text-center pt-5"><img src="../assets/img/logo-footer.svg"></a>
+            <div class="footer-block d-flex justify-content-between">
+                <div class="footer-block-left d-flex flex-column">
+                    <a href="#">
+                        Услуги
+                    </a>
+                    <div class="cleaning d-flex flex-column">
+                       <a href="#">Уборка помещений после потопа</a> 
+                       <a href="#">Уборка после тяжелого случая</a> 
+                       <a href="#">Уборка помещений после пожара</a> 
+                    </div>
+                    <a href="#">Сотрудничество</a> 
+                    <a href="#">Портфолио</a> 
+                    <a href="#">Блог</a> 
+                </div>
+                <div class="footer-block-right d-flex flex-column text-right">
+                    <a href="#">Контакты</a>
+
+                    <div class="cleaning text-right">
+                        Украина, г. Киев <br> 
+                        <span>Телефон:</span> +380985963249
+                    </div>
+                    <div class="cleaning d-flex flex-column text-right">
+                    Разработка и поддержка сайта <br> 
+                    devweb.total-web.com.ua
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            var app= new Vue({
+                el: '#app',
+                data:{
+                    loadOn:false
+                }
+            });
+        </script>
+</body>
+
+</html>
