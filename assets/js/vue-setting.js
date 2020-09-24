@@ -3,6 +3,6 @@ var app = new Vue({
     data:{
         showMobileMenu:false,
         menuNone:false,
-        loadOn:false
+        loadOn:false,
     }
 });

@@ -167,10 +167,27 @@ button{
     position: fixed;
     right: 1vw;
     bottom: 0vh;
-    z-index: 10;
     width: 100%;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    background-color: #29ABE2;
+    border-radius: 22px;
+    color: #fff;
+    font-family: 'Verdana-Bold', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    -webkit-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    z-index: 999;
+    text-align: center;
 }
 
+.navbar-tel-open-mobile 
+    .navbar-tel-open-btn{
+        display:block;
+    }
 .mobile-call{
     position: fixed;
     right: 1vw;
