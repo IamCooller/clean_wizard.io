@@ -35,12 +35,54 @@ button{
     width: 100%;
 }
 
+.OpenMenu{
+    display: none;
+    position: absolute;	left: 0; top: 0;    
+    left: -100px;
+    top: 30px;
+    background-color:#29ABE2;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    -webkit-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    z-index: 999;
+}
+
+.OpenMenu li a{
+    width: 100%;
+    white-space: nowrap;
+    font-family: 'Verdana-Regular',
+    sans-serif;
+    font-size:0.7rem;
+    color:#fff !important;
+}
+.OpenMenu li{
+    padding:  5px 10px;   
+    border-bottom: 1px solid #fff;
+}
+
+.OpenMenu li:hover{
+    text-decoration: underline;
+}
+
+.borderNone {
+    border-bottom: none !important;
+}
+.btnOpenMenu{
+    position: relative;
+}
+
+.btnOpenMenu:hover .OpenMenu{
+    display: flex;
+}
 .navbar-nav .nav-item{
     font-size:13px;
     font-weight: bold;
 }
 
-.navbar-nav .nav-item:hover{
+.navbar-nav .nav-item a:hover{
     text-decoration: underline !important;
 }
 .btn_tel{
@@ -48,7 +90,7 @@ button{
     outline: none;
     background-color:#29ABE2;
     border-radius: 37px;
-    color:#fff;
+    color:#fff !important;
      font-family: 'Verdana-Bold',
      sans-serif;
     padding: 0.7em 2em;
@@ -63,8 +105,10 @@ button{
 }
 
 
+.navbar-tel{
+    position: relative;    
+}
 .navbar-tel-open {
-    display: flex;
     flex-direction: column;
     border:none;
     outline: none;
@@ -74,17 +118,39 @@ button{
      font-family: 'Verdana-Bold',
      sans-serif;
     padding: 0.7em 2em;
+    display: none;
+    position: absolute;	left: 0; top: 0;    
     font-size:1rem;
     font-weight: 700;
     -webkit-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    z-index: 999;
 }
+
+
+.navbar-tel-open-btn{
+    text-align: center;
+    display: flex;
+}
+
+
+.navbar-tel:hover .navbar-tel-open{
+    display: flex;  
+}
+
 
 .navbar-tel-open-ter{
     font-size: 0.7rem;
     padding-top: 1.2rem;
     margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navbar-tel-open-btn  img{
+    max-width: 30px;
+    width: 100%;
 }
 
 .navbar-tel-open-social{
@@ -116,6 +182,7 @@ box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
 .mobile-call img{
    width: 100%;
    max-width: 57px;
+   max-height: 57px;
 }
 
 @media(max-width:990px){
@@ -130,5 +197,31 @@ box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
     .navbar-tel{
         display: none;
     }
-
+    .OpenMenu {
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+        color: #fff;
+        font-family: 'Verdana-Bold', sans-serif;
+        font-size: 0.7rem;
+        flex-direction: column;
+        text-align: left;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        z-index: 999;
+      }
+      .OpenMenu li{
+      border:none !important;
+      }
+      .OpenMenu li a {
+        width: 100%;
+        white-space: nowrap;
+        border: none !important;
+        padding: 5px 0;
+      }
+      .BorderSolid{
+          border-top: 1px solid #fff;
+      }
 }

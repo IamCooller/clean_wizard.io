@@ -70,7 +70,7 @@
 .btn-feedback {
     background: none;
     border: 4px solid #51B5FF;
-    color: #000000;
+    color: #000000 !important;
     font-family: 'Verdana-Bold', sans-serif;
     font-size: 19px;
      margin: 0 auto;
@@ -80,7 +80,7 @@
 
 .btn-feedback:hover{
     background: #51B5FF;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 
 
@@ -496,7 +496,7 @@ input::placeholder{
 
 .btn-form {
     background: #FFFFFF;
-    color: #000000;
+    color: #000000 !important;
 }
 
 .title-applications {
@@ -584,6 +584,7 @@ input::placeholder {
 
     .aftermath-title img {
         max-width: 130px;
+        max-height: 130px;
     }
 
     .aftermath-info-title p {
@@ -679,7 +680,7 @@ input::placeholder {
 
 .record-block-right img{
     position: relative;
-    left: 77vw;
+    right: -80vw;
     width: 100%;
     max-width: 207px;
     top: -24px;
@@ -690,14 +691,14 @@ input::placeholder {
     position: relative;
     z-index: 0;
     right: 15vw;
-    padding-right: 6rem;
+    padding-right: 10%;
 }
 
 .record-block-additional{
     color:#FFFFFF;
     background: #1C9CD8;
     width: 100%;
-    padding-left: 6rem;
+    padding-left: 7%;
     max-height: 157px;
 }
 .record-block-additional h3{
@@ -731,7 +732,7 @@ input::placeholder {
 
 .swiper-pagination {
     z-index: 10;
-    left: 49%;
+    left: 41%;
 }
 
 .swiper-pagination-bullet {
@@ -800,7 +801,7 @@ input::placeholder {
 
 
   .about-bg-partnership{
-      width: 100%;
+    width: 115%;
       position: relative;
       top: 10%;
   }
@@ -824,6 +825,7 @@ box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
   .portfolio-block-img img{
     width: 100%;
     height: 100%;
+    border-radius: 52px;
   }
 
   .portfolio-block-title h2
@@ -1017,16 +1019,10 @@ font-size:16px;
     }
 
 
-    .navbar-tel-open-btn{
-        text-align: center;
-    }
-
+ 
 
     /* HARD */
-    .aftermath-title-left-hard{
-       
-    }
-
+   
     @media (max-width: 770px){
         .aftermath-title-left-hard img{
             max-width: 86px;
