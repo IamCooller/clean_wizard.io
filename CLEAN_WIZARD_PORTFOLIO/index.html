@@ -87,14 +87,23 @@
         </header>
         <main>
             <section class="portfolio" id="app">
-                <a class="mobile-call" @click="showMobileMenu=!showMobileMenu" v-show="!showMobileMenu"><img
-                        src="../assets/img/mobil.png"></a>
-                <div class="navbar-tel-open navbar-tel-open-mobile" @click="showMobileMenu=!showMobileMenu"
-                    v-show="showMobileMenu">
-                    <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты</div>
-                    <div class="navbar-tel-open-ter">
-                        +38 (098) 596 32 49
-                    </div>
+                   <div class="mobile_menu">
+                       <a class="mobile-call" @click="showMobileMenu=!showMobileMenu" v-show="!showMobileMenu"><img
+                               src="../assets/img/mobil.png"></a>
+                       <div class="navbar-tel-open-mobile" @click="showMobileMenu=!showMobileMenu"
+                           v-show="showMobileMenu">
+                           <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты
+                           </div>
+                           <div class="navbar-tel-open-ter">
+                               +38 (098) 596 32 49
+                           </div>
+                           <div class="navbar-tel-open-social">
+                               <a href="#"><img src="../assets/img/whatsapp.png"></a>
+                               <a href="#"><img src="../assets/img/telegram.png"></a>
+                               <a href="#"><img src="../assets/img/viber.png"></a>
+                           </div>
+                       </div>
+                   </div>
                     <div class="navbar-tel-open-social">
                         <a href="#"><img
                                 src="../assets/img/whatsapp-viber-telegram-instant-messaging-mobile-app-whatsapp@1X.png"></a>

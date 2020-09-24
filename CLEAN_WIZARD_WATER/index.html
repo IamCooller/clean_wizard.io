@@ -39,7 +39,7 @@
                          
                         </li>
                         <li class="nav-item BorderSolid">
-                            <a class="nav-link" href="CLEAN_WIZARD_PORTFOLIO/index.html">Портфолио<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Портфолио<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="../CLEAN_WIZARD_PARTNERSHIP/index.html">Сотрудничество<span class="sr-only">(current)</span></a>
@@ -79,14 +79,20 @@
         </div>
     </header>
     <main>
-        <a class="mobile-call" @click="showMobileMenu=!showMobileMenu" v-show="!showMobileMenu"><img src="../assets/img/mobil.png"></a>
-        <div class="navbar-tel-open navbar-tel-open-mobile" @click="showMobileMenu=!showMobileMenu" v-show="showMobileMenu">
-            <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты</div>  
-               <div class="navbar-tel-open-ter">
-                   +38 (098) 596 32 49
-               </div>
-               <div class="navbar-tel-open-social">
-                  <a href="#"><img src="../assets/img/whatsapp-viber-telegram-instant-messaging-mobile-app-whatsapp@1X.png"></a> 
+           <div class="mobile_menu">
+               <a class="mobile-call" @click="showMobileMenu=!showMobileMenu" v-show="!showMobileMenu"><img
+                       src="../assets/img/mobil.png"></a>
+               <div class="navbar-tel-open-mobile" @click="showMobileMenu=!showMobileMenu" v-show="showMobileMenu">
+                   <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты
+                   </div>
+                   <div class="navbar-tel-open-ter">
+                       +38 (098) 596 32 49
+                   </div>
+                   <div class="navbar-tel-open-social">
+                       <a href="#"><img src="../assets/img/whatsapp.png"></a>
+                       <a href="#"><img src="../assets/img/telegram.png"></a>
+                       <a href="#"><img src="../assets/img/viber.png"></a>
+                   </div>
                </div>
            </div>
         <section class="main-fire" >
@@ -216,7 +222,7 @@
     </main>
     <footer>
         <div class="container d-flex justify-content-center flex-column pb-5">
-            <a href="../index.html" class="text-center pt-5"><img src="assets/img/logo-footer.svg"></a>
+            <a href="../index.html" class="text-center pt-5"><img src="../assets/img/logo-footer.svg"></a>
             <div class="footer-block d-flex justify-content-between">
                 <div class="footer-block-left d-flex flex-column">
                     <a>
