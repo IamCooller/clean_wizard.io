@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "Verdana-Bold";
     src: url("../fonts/Verdana-Bold.ttf") format("truetype");
@@ -12,135 +11,155 @@
     font-style: normal;
     font-weight: normal;
 }
+
 body {
     font-family: 'Verdana-Regular',
-    sans-serif;
+        sans-serif;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
-     color:#000 !important;
-     text-decoration: none !important;
+a {
+    color: #000 !important;
+    text-decoration: none !important;
 }
 
-button{
+button {
     outline: none !important;
 }
 
-.navbar-brand img{
-    max-width:207px;
+.navbar-brand img {
+    max-width: 207px;
     width: 100%;
 }
 
-.OpenMenu{
+.OpenMenu {
     display: none;
-    position: absolute;	left: 0; top: 0;    
+    position: absolute;
+    left: 0;
+    top: 0;
     left: -100px;
     top: 30px;
-    background-color:#29ABE2;
+    background-color: #29ABE2;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     padding: 0;
-    -webkit-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
-    box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
     z-index: 999;
 }
 
-.OpenMenu li a{
+.OpenMenu li a {
     width: 100%;
     white-space: nowrap;
     font-family: 'Verdana-Regular',
-    sans-serif;
-    font-size:0.7rem;
-    color:#fff !important;
+        sans-serif;
+    font-size: 0.7rem;
+    color: #fff !important;
 }
-.OpenMenu li{
-    padding:  5px 10px;   
+
+.OpenMenu li {
+    padding: 5px 10px;
     border-bottom: 1px solid #fff;
 }
 
-.OpenMenu li:hover{
+.OpenMenu li:hover {
     text-decoration: underline;
 }
 
 .borderNone {
     border-bottom: none !important;
 }
-.btnOpenMenu{
+
+.btnOpenMenu {
     position: relative;
 }
 
-.btnOpenMenu:hover .OpenMenu{
+.btnOpenMenu:hover .OpenMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
-.navbar-nav .nav-item{
-    font-size:13px;
+
+.navbar-nav .nav-item {
+    font-size: 13px;
     font-weight: bold;
 }
 
-.navbar-nav .nav-item a:hover{
+.navbar-nav .nav-item a:hover {
     text-decoration: underline !important;
 }
-.btn_tel{
-    border:none;
+
+.btn_tel {
+    border: none;
     outline: none;
-    background-color:#29ABE2;
+    background-color: #29ABE2;
     border-radius: 37px;
-    color:#fff !important;
-     font-family: 'Verdana-Bold',
-     sans-serif;
+    color: #fff !important;
+    font-family: 'Verdana-Bold',
+        sans-serif;
     padding: 0.7em 2em;
-    font-size:1rem;
+    font-size: 1rem;
     max-height: 44px;
     font-weight: 700;
 }
 
-.btn_tel img{
-    max-width:30px;
-    width:100%;
+.btn_tel img {
+    max-width: 30px;
+    width: 100%;
 }
 
 
-.navbar-tel{
-    position: relative;    
+.navbar-tel {
+    position: relative;
 }
+
 .navbar-tel-open {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    border:none;
+    border: none;
     outline: none;
-    background-color:#29ABE2;
+    background-color: #29ABE2;
     border-radius: 22px;
-    color:#fff;
-     font-family: 'Verdana-Bold',
-     sans-serif;
+    color: #fff;
+    font-family: 'Verdana-Bold',
+        sans-serif;
     padding: 0.7em 2em;
     display: none;
-    position: absolute;	left: 0; top: 0;    
-    font-size:1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
     font-weight: 700;
-    -webkit-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
-    box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
     z-index: 999;
 }
 
 
-.navbar-tel-open-btn{
+.navbar-tel-open-btn {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 
-.navbar-tel:hover .navbar-tel-open{
-    display: flex;  
+.navbar-tel:hover .navbar-tel-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 
-.navbar-tel-open-ter{
+.navbar-tel-open-ter {
     font-size: 0.7rem;
     padding-top: 1.2rem;
     margin: 0 auto;
@@ -148,26 +167,29 @@ button{
     white-space: nowrap;
 }
 
-.navbar-tel-open-btn  img{
+.navbar-tel-open-btn img {
     max-width: 30px;
     width: 100%;
 }
 
-.navbar-tel-open-social{
+.navbar-tel-open-social {
     margin: 0 auto;
     padding-top: 0.4rem;
 }
 
-.mobile-menu-additional{
+.mobile-menu-additional {
     display: none;
 }
 
 
-.navbar-tel-open-mobile{
+.navbar-tel-open-mobile {
     position: fixed;
     right: 1vw;
     bottom: 0vh;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     border: none;
     outline: none;
@@ -177,18 +199,17 @@ button{
     font-family: 'Verdana-Bold', sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    -webkit-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
-    box-shadow: 10px 13px 5px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
     z-index: 999;
     text-align: center;
 }
 
-.navbar-tel-open-mobile 
-    .navbar-tel-open-btn{
-        display:block;
-    }
-.mobile-call{
+.navbar-tel-open-mobile .navbar-tel-open-btn {
+    display: block;
+}
+
+.mobile-call {
     position: fixed;
     right: 1vw;
     bottom: 0vh;
@@ -196,24 +217,29 @@ button{
     display: none;
 }
 
-.mobile-call img{
-   width: 100%;
-   max-width: 57px;
-   max-height: 57px;
+.mobile-call img {
+    width: 100%;
+    max-width: 57px;
+    max-height: 57px;
 }
 
-@media(max-width:990px){
-    .navbar-toggler{
+@media(max-width:990px) {
+    .navbar-toggler {
         padding: 12px;
         border-radius: 8px;
     }
+
     .mobile-menu-additional,
-    .mobile-call{
+    .mobile-call {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
-    .navbar-tel{
+
+    .navbar-tel {
         display: none;
     }
+
     .OpenMenu {
         display: block;
         position: relative;
@@ -222,23 +248,30 @@ button{
         color: #fff;
         font-family: 'Verdana-Bold', sans-serif;
         font-size: 0.7rem;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: left;
         padding: 0;
         background: none;
+        -webkit-box-shadow: none;
         box-shadow: none;
         z-index: 999;
-      }
-      .OpenMenu li{
-      border:none !important;
-      }
-      .OpenMenu li a {
+    }
+
+    .OpenMenu li {
+        border: none !important;
+    }
+
+    .OpenMenu li a {
         width: 100%;
         white-space: nowrap;
         border: none !important;
         padding: 5px 0;
-      }
-      .BorderSolid{
-          border-top: 1px solid #fff;
-      }
+    }
+
+    .BorderSolid {
+        border-top: 1px solid #fff;
+    }
 }
