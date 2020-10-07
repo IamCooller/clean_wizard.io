@@ -22,13 +22,14 @@ li {
 }
 
 a {
-    color: #000 !important;
+    color: #fff !important;
     text-decoration: none !important;
 }
 
 button {
     outline: none !important;
 }
+
 
 .navbar-brand img {
     max-width: 207px;
@@ -49,8 +50,7 @@ button {
     flex-direction: column;
     text-align: center;
     padding: 0;
-    -webkit-box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
     z-index: 999;
 }
 
@@ -61,6 +61,11 @@ button {
         sans-serif;
     font-size: 0.7rem;
     color: #fff !important;
+    padding: 11px;
+}
+
+.nav-item a{
+    color:#000 !important;
 }
 
 .OpenMenu li {
@@ -138,8 +143,6 @@ button {
     top: 0;
     font-size: 1rem;
     font-weight: 700;
-    -webkit-box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
     z-index: 999;
 }
 
@@ -199,8 +202,6 @@ button {
     font-family: 'Verdana-Bold', sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    -webkit-box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 13px 5px -5px rgba(0, 0, 0, 0.75);
     z-index: 999;
     text-align: center;
 }
@@ -223,10 +224,32 @@ button {
     max-height: 57px;
 }
 
+.navScroll{
+    opacity: 0.5;
+}
+
+.navbar{
+    background: #fff;
+    padding: 0.2rem 5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar:hover{
+    opacity: 1 !important;
+}
+
 @media(max-width:990px) {
     .navbar-toggler {
         padding: 12px;
         border-radius: 8px;
+    }
+
+    .navbar{
+        position: relative;
     }
 
     .mobile-menu-additional,
