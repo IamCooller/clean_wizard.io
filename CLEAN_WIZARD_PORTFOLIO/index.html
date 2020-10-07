@@ -13,74 +13,65 @@
 
 <body>
     <div id="app">
-        <header>
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
+        <header >
+            <div class="container" >
+                <nav class="navbar navbar-expand-lg navbar-light  ">
                     <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.svg" alt="logo"></a>
-                    <button class="navbar-toggler" @click="menuNone = !menuNone" data-target="#my-nav"
-                        data-toggle="collapse" aria-controls="my-nav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <img src="../assets/img/menu.png" v-show="!menuNone">
-                        <img src="../assets/img/закрыть.png" v-show="menuNone">
+                    <button class="navbar-toggler" @click="menuNone = !menuNone" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                       <img src="../assets/img/menu.png" v-show="!menuNone">
+                       <img src="../assets/img/закрыть.png" v-show="menuNone">
                     </button>
                     <div id="my-nav" class="collapse navbar-collapse" v-show="menuNone">
                         <ul class="navbar-nav text-center mx-auto">
                             <li class="nav-item ">
-                                <a class="nav-link" href="../CLEAN_WIZARD_ABOUT/index.html">О компании<span
-                                        class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="../CLEAN_WIZARD_ABOUT/index.html">О компании<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item ">
                                 <div class="btnOpenMenu">
-                                    <a class="nav-link ">Услуги<span class="sr-only">(current)</span></a>
+                                <a class="nav-link ">Услуги<span class="sr-only">(current)</span></a>
                                     <ul class="OpenMenu">
                                         <li><a href="../CLEAN_WIZARD_FIRE/index.html">Уборка после пожара</a></li>
                                         <li><a href="../CLEAN_WIZARD_WATER/index.html">Уборка после потопа</a></li>
-                                        <li class="borderNone"><a href="../CLEAN_WIZARD_HARD/index.html">Тяжелый
-                                                случай</a></li>
+                                        <li class="borderNone"><a href="../CLEAN_WIZARD_HARD/index.html">Тяжелый случай</a></li>
                                     </ul>
                                 </div>
-
+                             
                             </li>
                             <li class="nav-item BorderSolid">
-                                <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Портфолио<span
-                                        class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Портфолио<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="../CLEAN_WIZARD_PARTNERSHIP/index.html">Сотрудничество<span
-                                        class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="../CLEAN_WIZARD_PARTNERSHIP/index.html">Сотрудничество<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Блог<span
-                                        class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Блог<span class="sr-only">(current)</span></a>
                             </li>
                         </ul>
-
+    
                         <div class="mobile-menu-additional">
                             <div class="mobile-menu-additional-block pt-4">
-                                <p>Украина г. Киев</p>
-                                <span>Телефон: +380985923249</span>
+                                   <p>Украина г. Киев</p>
+                                   <span>Телефон:</span> <a href="tel:+380985963249">+380985963249</a> 
                             </div>
-                            <a href="#" class=""><img src="../assets/img/mobil.png"></a>
-
+                             <a href="#" class=""><img src="../assets/img/mobil.png"></a>
                         </div>
                     </div>
                     <div class="navbar-tel-block">
                         <div class="navbar-tel">
                             <button class="btn_tel"><img src="../assets/img/tel.svg" class="pr-2">Контакты</button>
-                            <div class="navbar-tel-open">
-                                <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты
-                                </div>
-                                <div class="navbar-tel-open-ter">
-                                    <p> +38 (098) 596 32 49</p>
-                                </div>
-                                <div class="navbar-tel-open-social">
-                                    <a href="#"><img src="../assets/img/whatsapp.png"></a>
-                                    <a href="#"><img src="../assets/img/telegram.png"></a>
-                                    <a href="#"><img src="../assets/img/viber.png"></a>
-                                </div>
-                            </div>
+                            <div class="navbar-tel-open" >
+                                <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты</div>  
+                                   <div class="navbar-tel-open-ter">
+                                      <p> <a href="tel:+380985963249">+38 (098) 596 32 49</a> </p>
+                                   </div>
+                                   <div class="navbar-tel-open-social">
+                                      <a href="#"><img src="../assets/img/whatsapp.png"></a> 
+                                      <a href="#"><img src="../assets/img/telegram.png"></a> 
+                                      <a href="#"><img src="../assets/img/viber.png"></a> 
+                                   </div>
+                               </div>
                         </div>
-
                     </div>
                 </nav>
             </div>
@@ -95,7 +86,7 @@
                            <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты
                            </div>
                            <div class="navbar-tel-open-ter">
-                               +38 (098) 596 32 49
+                            <a href="tel:+380985963249">+38 (098) 596 32 49</a> 
                            </div>
                            <div class="navbar-tel-open-social">
                                <a href="#"><img src="../assets/img/whatsapp.png"></a>
@@ -135,10 +126,7 @@
                                 <a href="CLEAN_WIZARD_PORTFOLIO_INFO/indexHARD.html" class="btn-portfolio">Подробнее</a>
                             </div>
                         </div>
-                        <div class="btn-load-portfolio text-center my-5" @click='loadOn=!loadOn' v-show="!loadOn">
-                            <img src="../assets/img/btn-load-portfolio.png">
-                        </div>
-                        <div class="portfolio-load" v-show="loadOn">
+                        <div class="portfolio-load">
                             <div class="portfolio-block d-flex mt-5">
                                 <div class="portfolio-block-img col-12 col-lg-7 p-0">
                                     <img src="../assets/img/slide10.jpg">
@@ -147,25 +135,6 @@
                                     <h2 class="title-block my-4">ПОСЛЕДСТВИЯ РЕМОНТА</h2>
                                     <p>Уборка помещения после ремонта подразумевает собой полное удаление следов  строительного материалов, мусора и пыли. Даже случайные пятна клея и растворов исчезли без труда. Поверхности обработаны качественными средствами для придания блеска, дополнительного чувства комфорта и ощущения свежести. Мелкий сор удален даже из самых труднодоступных участков. Воздух очищен и обеззаражен. </p>
                                     <a href="CLEAN_WIZARD_PORTFOLIO_INFO/indexREMONT.html" class="btn-portfolio">Подробнее</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-block d-flex mt-5">
-                                <div class="portfolio-block-img col-12 col-lg-7 p-0">
-                                    <img src="../assets/img/posle-pozhara copy 3@1X.png">
-                                </div>
-                                <div class="portfolio-block-title col-12 col-lg-5">
-                                    <h2 class="title-block my-4">ПОСЛЕДСТВИЯ ПОЖАРА</h2>
-                                    <p>Далеко-далеко за словесными горами в
-                                        стране гласных и согласных живут рыбные
-                                        тексты. Вдали от всех живут они в буквенных
-                                        домах на берегу Семантика большого
-                                        языкового океана. Маленький ручеек Даль
-                                        журчит по всей стране и обеспечивает ее
-                                        всеми необходимыми правилами. Эта
-                                        парадигматическая страна, в которой
-                                        жаренные члены предложения залетают
-                                        прямо в рот..</p>
-                                    <a href="CLEAN_WIZARD_PORTFOLIO_INFO/indexFIRE.html" class="btn-portfolio">Подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -195,7 +164,7 @@
 
                         <div class="cleaning text-right">
                             Украина, г. Киев <br>
-                            <span>Телефон:</span> +380985963249
+                            <span>Телефон:</span>   <a href="tel:+380985963249">+38 (098) 596 32 49</a> 
                         </div>
                         <div class="cleaning d-flex flex-column text-right">
                             Разработка и поддержка сайта <br>

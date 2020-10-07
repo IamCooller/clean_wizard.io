@@ -13,71 +13,69 @@
 
 <body>
     <div id="app">
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.svg" alt="logo"></a>
-                <button class="navbar-toggler" @click="menuNone = !menuNone" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="../assets/img/menu.png" v-show="!menuNone">
-                    <img src="../assets/img/закрыть.png" v-show="menuNone">
-                </button>
-                <div id="my-nav" class="collapse navbar-collapse" v-show="menuNone">
-                    <ul class="navbar-nav text-center mx-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="../CLEAN_WIZARD_ABOUT/index.html">О компании<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item ">
-                            <div class="btnOpenMenu">
-                            <a class="nav-link ">Услуги<span class="sr-only">(current)</span></a>
-                                <ul class="OpenMenu">
-                                    <li><a href="../CLEAN_WIZARD_FIRE/index.html">Уборка после пожара</a></li>
-                                    <li><a href="../CLEAN_WIZARD_WATER/index.html">Уборка после потопа</a></li>
-                                    <li class="borderNone"><a href="../CLEAN_WIZARD_HARD/index.html">Тяжелый случай</a></li>
-                                </ul>
+        <header >
+            <div class="container" >
+                <nav class="navbar navbar-expand-lg navbar-light  ">
+                    <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.svg" alt="logo"></a>
+                    <button class="navbar-toggler" @click="menuNone = !menuNone" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                       <img src="../assets/img/menu.png" v-show="!menuNone">
+                       <img src="../assets/img/закрыть.png" v-show="menuNone">
+                    </button>
+                    <div id="my-nav" class="collapse navbar-collapse" v-show="menuNone">
+                        <ul class="navbar-nav text-center mx-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../CLEAN_WIZARD_ABOUT/index.html">О компании<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <div class="btnOpenMenu">
+                                <a class="nav-link ">Услуги<span class="sr-only">(current)</span></a>
+                                    <ul class="OpenMenu">
+                                        <li><a href="../CLEAN_WIZARD_FIRE/index.html">Уборка после пожара</a></li>
+                                        <li><a href="../CLEAN_WIZARD_WATER/index.html">Уборка после потопа</a></li>
+                                        <li class="borderNone"><a href="../CLEAN_WIZARD_HARD/index.html">Тяжелый случай</a></li>
+                                    </ul>
+                                </div>
+                             
+                            </li>
+                            <li class="nav-item BorderSolid">
+                                <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Портфолио<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../CLEAN_WIZARD_PARTNERSHIP/index.html">Сотрудничество<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Блог<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+    
+                        <div class="mobile-menu-additional">
+                            <div class="mobile-menu-additional-block pt-4">
+                                   <p>Украина г. Киев</p>
+                                   <span>Телефон:</span> <a href="tel:+380985963249">+380985963249</a> 
                             </div>
-                         
-                        </li>
-                        <li class="nav-item BorderSolid">
-                            <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Портфолио<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="../CLEAN_WIZARD_PARTNERSHIP/index.html">Сотрудничество<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="../CLEAN_WIZARD_PORTFOLIO/index.html">Блог<span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-
-                    <div class="mobile-menu-additional">
-                        <div class="mobile-menu-additional-block pt-4">
-                               <p>Украина г. Киев</p>
-                               <span>Телефон: +380985923249</span>
+                             <a href="#" class=""><img src="../assets/img/mobil.png"></a>
                         </div>
-                         <a href="#" class=""><img src="../assets/img/mobil.png"></a>
-                
                     </div>
-                </div>
-                <div class="navbar-tel-block">
-                    <div class="navbar-tel">
-                        <button class="btn_tel"><img src="../assets/img/tel.svg" class="pr-2">Контакты</button>
-                        <div class="navbar-tel-open" >
-                            <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты</div>  
-                               <div class="navbar-tel-open-ter">
-                                  <p> +38 (098) 596 32 49</p>
+                    <div class="navbar-tel-block">
+                        <div class="navbar-tel">
+                            <button class="btn_tel"><img src="../assets/img/tel.svg" class="pr-2">Контакты</button>
+                            <div class="navbar-tel-open" >
+                                <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты</div>  
+                                   <div class="navbar-tel-open-ter">
+                                      <p> <a href="tel:+380985963249">+38 (098) 596 32 49</a> </p>
+                                   </div>
+                                   <div class="navbar-tel-open-social">
+                                      <a href="#"><img src="../assets/img/whatsapp.png"></a> 
+                                      <a href="#"><img src="../assets/img/telegram.png"></a> 
+                                      <a href="#"><img src="../assets/img/viber.png"></a> 
+                                   </div>
                                </div>
-                               <div class="navbar-tel-open-social">
-                                <a href="#"><img src="../assets/img/whatsapp.png"></a> 
-                                <a href="#"><img src="../assets/img/telegram.png"></a> 
-                                <a href="#"><img src="../assets/img/viber.png"></a> 
-                             </div>
-                           </div>
+                        </div>
                     </div>
-                  
-                </div>
-            </nav>
-        </div>
-    </header>
+                </nav>
+            </div>
+        </header>
     <main>
            <div class="mobile_menu">
                <a class="mobile-call" @click="showMobileMenu=!showMobileMenu" v-show="!showMobileMenu"><img
@@ -86,7 +84,7 @@
                    <div class="navbar-tel-open-btn"> <img src="../assets/img/tel.svg" class="pr-2">Контакты
                    </div>
                    <div class="navbar-tel-open-ter">
-                       +38 (098) 596 32 49
+                 <a href="tel:+380985963249">+38 (098) 596 32 49</a> 
                    </div>
                    <div class="navbar-tel-open-social">
                        <a href="#"><img src="../assets/img/whatsapp.png"></a>
@@ -242,7 +240,7 @@
 
                     <div class="cleaning text-right">
                         Украина, г. Киев <br> 
-                        <span>Телефон:</span> +380985963249
+                        <span>Телефон:</span> <a href="tel:+380985963249">+380985963249</a> 
                     </div>
                     <div class="cleaning d-flex flex-column text-right">
                     Разработка и поддержка сайта <br> 
