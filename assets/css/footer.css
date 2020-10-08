@@ -3,17 +3,25 @@ footer {
 }
 
 footer img {
-    max-width: 360px;
+    max-width: 200px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    top: 20vh;
+    
 }
 
 
 .footer-block,
 .footer-block a {
-    color: #FFFFFF !important;
-    font-size: 15px;
+    color: #FFFFFF;
+    font-size: 12px;
     font-weight: 600;
+}
+
+.cleaning-tel{
+    color: #dc3545 !important;
+    text-decoration: underline !important;
 }
 
 .cleaning {
@@ -28,3 +36,4 @@ footer img {
 .cleaning span {
     font-weight: 600;
 }
+

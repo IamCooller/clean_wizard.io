@@ -582,6 +582,17 @@ input::placeholder {
     font-weight: 700;
 }
 
+.title-applications h2{
+    color: #FFFFFF;
+    font-family: 'Verdana-Bold',
+        sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 .form-block {
     max-width: 447px;
     width: 100%;
@@ -930,6 +941,10 @@ input::placeholder {
 
 /* PORTFOLIO */
 
+.portfolio{
+    padding-bottom: 20vh;
+}
+
 .portfolio-block {
     background: #51B5FF;
     border-radius: 52px;
@@ -1008,6 +1023,7 @@ input::placeholder {
 
 .portfolio-info {
     overflow: hidden;
+    padding-top: 20vh;
 }
 
 .portfolio-info-title h2 {
